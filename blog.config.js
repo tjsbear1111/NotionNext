@@ -19,7 +19,7 @@ const BLOG = {
 
   AUTHOR: process.env.NEXT_PUBLIC_AUTHOR || 'tjsbear1111', // 您的昵称 例如 tangly1024
   BIO: process.env.NEXT_PUBLIC_BIO || '科技小飛象🍚', // 作者简介
-  LINK: process.env.NEXT_PUBLIC_LINK || 'https://notion-next-wine-three.vercel.app', // 网站地址
+  LINK: process.env.NEXT_PUBLIC_LINK || 'notion-next-fmg1cyral-tjsbear1111s-projects.vercel.app', // 网站地址
   KEYWORDS: process.env.NEXT_PUBLIC_KEYWORD || 'Notion, 部落格', // 网站关键词 英文逗号隔开
 
   // 社交链接，不需要可留空白，例如 CONTACT_WEIBO:''
