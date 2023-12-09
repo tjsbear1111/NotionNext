@@ -19,7 +19,7 @@ const BLOG = {
 
   AUTHOR: process.env.NEXT_PUBLIC_AUTHOR || '日本防衛快譯站', // 您的昵称 例如 tangly1024
   BIO: process.env.NEXT_PUBLIC_BIO || '您所不知道的日本防衛現況🍚', // 作者简介
-  LINK: process.env.NEXT_PUBLIC_LINK || 'https://notion-next-750lcf6ur-tjsbear1111s-projects.vercel.app', // 网站地址
+  LINK: process.env.NEXT_PUBLIC_LINK || 'https://notion-next-tjsbear1111s-projects.vercel.app', // 网站地址
   KEYWORDS: process.env.NEXT_PUBLIC_KEYWORD || '日本防衛, 日中翻譯, 部落格', // 网站关键词 英文逗号隔开
 
   // 社交链接，不需要可留空白，例如 CONTACT_WEIBO:''
