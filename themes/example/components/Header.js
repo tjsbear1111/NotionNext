@@ -19,8 +19,6 @@ export const Header = (props) => {
                     {/* 右侧文字 */}
                 </div>
             </div>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5330018171034479"
-     crossorigin="anonymous"></script>
         </header>
   )
 }
