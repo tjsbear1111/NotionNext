@@ -26,6 +26,16 @@ class MyDocument extends Document {
                       return <link key={index} rel="preload" href={fontUrl} as="font" type="font/woff2" />
                     }
                   })}
+
+                    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JN4B8H421G"></script>
+                    <script>
+                      window.dataLayer = window.dataLayer || [];
+                      function gtag(){dataLayer.push(arguments);}
+                      gtag('js', new Date());
+
+                      gtag('config', 'G-JN4B8H421G');
+                   </script>
+                     
                 </Head>
 
                 <body className={`${BLOG.FONT_STYLE} font-light scroll-smooth`}>
