@@ -14,12 +14,7 @@ export const Header = (props) => {
                     className="py-6 w-full text-center md:text-left md:w-auto text-gray-dark no-underline flex justify-center items-center">
 
                     {siteConfig('TITLE')}
-                </Link>
-
-                      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5330018171034479"
-     crossorigin="anonymous"></script>
-
-                      
+                </Link>                      
                 <div className="w-full md:w-auto text-center md:text-right">
                     {/* 右侧文字 */}
                 </div>
