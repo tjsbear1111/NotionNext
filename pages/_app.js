@@ -50,10 +50,10 @@ const MyApp = ({ Component, pageProps }) => {
             <script async src="https://www.googletagmanager.com/gtag/js?id=G-JN4B8H421G"></script>
             <script>
                     window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
+                     function gtag(){dataLayer.push(arguments);}
+                      gtag('js', new Date());
 
-                    gtag('config', 'G-JN4B8H421G');
+                      gtag('config', 'G-JN4B8H421G');
                     </script>
 
             <Component {...pageProps} />
