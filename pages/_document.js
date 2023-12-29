@@ -10,17 +10,16 @@ class MyDocument extends Document {
         return (
             <Html>
                 <Head>
+                        <!-- Google tag (gtag.js) -->
                     <script async src="https://www.googletagmanager.com/gtag/js?id=G-JN4B8H421G"></script>
-                    <script dangerouslySetInnerHTML={{
-                        __html:`
-                        window.dataLayer = window.dataLayer || [];
-                        function gtag(){dataLayer.push(arguments);}
-                        gtag('js', new Date());
-                      
-                        gtag('config', 'G-JN4B8H421G');
-                        `,                        
-                    }} />
+                    <script>
+                      window.dataLayer = window.dataLayer || [];
+                      function gtag(){dataLayer.push(arguments);}
+                      gtag('js', new Date());
 
+                      gtag('config', 'G-JN4B8H421G');
+                   </script>
+                       
                 </Head>
                 <body>
                     <Main />
