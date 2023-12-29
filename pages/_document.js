@@ -1,33 +1,40 @@
+// eslint-disable-next-line @next/next/no-document-import-in-page
 import Document, { Html, Head, Main, NextScript } from 'next/document'
+import BLOG from '@/blog.config'
 
 class MyDocument extends Document {
-    static async getInitialProps(ctx) {
-        const initialProps = await Document.getInitialProps(ctx)
-        return { ...initialProps }
-    }
+  static async getInitialProps(ctx) {
+    const initialProps = await Document.getInitialProps(ctx)
+    return { ...initialProps }
+  }
 
-    render() {
-        return (
-            <Html>
+  render() {
+    return (
+            <Html lang={BLOG.LANG}>
                 <Head>
-                        <!-- Google tag (gtag.js) -->
-                    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JN4B8H421G"></script>
-                    <script>
-                      window.dataLayer = window.dataLayer || [];
-                      function gtag(){dataLayer.push(arguments);}
-                      gtag('js', new Date());
+                <link rel='icon' href= {`${BLOG.BLOG_FAVICON}`} />
+                  {/* 预加载字体 */}
+                  {BLOG.FONT_AWESOME && <>
+                      <link rel='preload' href={BLOG.FONT_AWESOME} as="style" crossOrigin="anonymous" />
+                      <link rel="stylesheet" href={BLOG.FONT_AWESOME} crossOrigin="anonymous" referrerPolicy="no-referrer" />
+                  </>}
 
-                      gtag('config', 'G-JN4B8H421G');
-                   </script>
-                       
+                  {BLOG.FONT_URL?.map((fontUrl, index) => {
+                    if (fontUrl.endsWith('.css')) {
+                      return <link key={index} rel="stylesheet" href={fontUrl} />
+                    } else {
+                      return <link key={index} rel="preload" href={fontUrl} as="font" type="font/woff2" />
+                    }
+                  })}
                 </Head>
-                <body>
+
+                <body className={`${BLOG.FONT_STYLE} font-light scroll-smooth`}>
                     <Main />
                     <NextScript />
                 </body>
             </Html>
-        )
-    }
+    )
+  }
 }
 
 export default MyDocument
