@@ -29,9 +29,6 @@ class MyDocument extends Document {
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5330018171034479"
      crossorigin="anonymous"></script>
-
-       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5330018171034479"
-     crossorigin="anonymous"></script>
 <!-- 1 -->
 <ins class="adsbygoogle"
      style="display:block"
