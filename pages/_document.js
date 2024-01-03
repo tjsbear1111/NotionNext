@@ -31,10 +31,8 @@ class MyDocument extends Document {
      crossorigin="anonymous"></script>
 
                 </Head>
-
                 <body className={`${BLOG.FONT_STYLE} font-light scroll-smooth`}>
                     <Main />
-                    <NextScript />
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5330018171034479"
      crossorigin="anonymous"></script>
@@ -49,6 +47,7 @@ class MyDocument extends Document {
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
        
+                    <NextScript />
                 </body>
             </Html>
     )
