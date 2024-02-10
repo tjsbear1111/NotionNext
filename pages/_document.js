@@ -29,12 +29,12 @@ class MyDocument extends Document {
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5330018171034479"
      crossorigin="anonymous"></script>
-                </Head>
        
+                </Head>
+        <script language="javascript" src="https://adcenter.conn.tw/ads_output.php?k=375g6"></script>
                 <body className={`${BLOG.FONT_STYLE} font-light scroll-smooth`}>
                     <Main />
                     <NextScript />
-                     <script language="javascript" src="https://adcenter.conn.tw/ads_output.php?k=375g6"></script>
                 </body>
             </Html>
     )
