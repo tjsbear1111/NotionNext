@@ -29,10 +29,16 @@ class MyDocument extends Document {
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5330018171034479"
      crossorigin="anonymous"></script>
+       <script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+</script>
                 </Head>
                 <body className={`${BLOG.FONT_STYLE} font-light scroll-smooth`}>
                     <Main />
                     <NextScript />
+          <amp-auto-ads type="adsense"
+        data-ad-client="ca-pub-5330018171034479">
+</amp-auto-ads>
                 </body>
             </Html>
     )
