@@ -12,6 +12,15 @@ class MyDocument extends Document {
     return (
             <Html lang={BLOG.LANG}>
                 <Head>
+      <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WWYHS8KJC4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WWYHS8KJC4');
+</script>
                 <link rel='icon' href= {`${BLOG.BLOG_FAVICON}`} />
                   {/* 预加载字体 */}
                   {BLOG.FONT_AWESOME && <>
