@@ -32,6 +32,15 @@ class MyDocument extends Document {
        <script async custom-element="amp-auto-ads"
         src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
 </script>
+          <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WWYHS8KJC4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WWYHS8KJC4');
+</script>
                 </Head>
                 <body className={`${BLOG.FONT_STYLE} font-light scroll-smooth`}>
                     <Main />
