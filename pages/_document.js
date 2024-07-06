@@ -12,9 +12,6 @@ class MyDocument extends Document {
     return (
             <Html lang={BLOG.LANG}>
                 <Head>
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5330018171034479"
-     crossorigin="anonymous"></script>
-      
                 <link rel='icon' href= {`${BLOG.BLOG_FAVICON}`} />
                   {/* 预加载字体 */}
                   {BLOG.FONT_AWESOME && <>
@@ -29,6 +26,8 @@ class MyDocument extends Document {
                       return <link key={index} rel="preload" href={fontUrl} as="font" type="font/woff2" />
                     }
                   })}
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5330018171034479"
+     crossorigin="anonymous"></script>
        <script async custom-element="amp-auto-ads"
         src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
 </script>
